@@ -1,0 +1,98 @@
+{
+  "A_diabetes_readmission": {
+    "Decision Tree": {
+      "accuracy": 0.6033719102728962,
+      "precision": 0.1152123275398674,
+      "recall": 0.5115354017501988,
+      "f1": 0.18806668616554548,
+      "auc": 0.585320088362247,
+      "confusion_matrix": [
+        [
+          7803,
+          4938
+        ],
+        [
+          614,
+          643
+        ]
+      ]
+    },
+    "Neural Network (MLP)": {
+      "accuracy": 0.6013001857408201,
+      "precision": 0.10705198109778262,
+      "recall": 0.46857597454256167,
+      "f1": 0.17428613700251516,
+      "auc": 0.5603543943259245,
+      "confusion_matrix": [
+        [
+          7828,
+          4913
+        ],
+        [
+          668,
+          589
+        ]
+      ]
+    },
+    "n_rows": 69990,
+    "positive_rate": 0.08979854264894985,
+    "top_features": [
+      "number_inpatient",
+      "time_in_hospital",
+      "age_mid",
+      "num_medications",
+      "num_lab_procedures",
+      "diabetesMed_Yes",
+      "diag_1_group_Circulatory",
+      "number_diagnoses"
+    ]
+  },
+  "B_hospital_infection_risk": {
+    "Decision Tree": {
+      "accuracy": 0.5471698113207547,
+      "precision": 0.3673469387755102,
+      "recall": 0.5142857142857142,
+      "f1": 0.42857142857142855,
+      "auc": 0.5662349094567405,
+      "confusion_matrix": [
+        [
+          160,
+          124
+        ],
+        [
+          68,
+          72
+        ]
+      ]
+    },
+    "Neural Network (MLP)": {
+      "accuracy": 0.35141509433962265,
+      "precision": 0.3333333333333333,
+      "recall": 0.9642857142857143,
+      "f1": 0.4954128440366973,
+      "auc": 0.47245975855130784,
+      "confusion_matrix": [
+        [
+          14,
+          270
+        ],
+        [
+          5,
+          135
+        ]
+      ]
+    },
+    "n_rows": 2118,
+    "positive_rate": 0.3305004721435316,
+    "top_features": [
+      "Beds",
+      "region_West",
+      "Hospital Ownership_Proprietary",
+      "Hospital Ownership_Voluntary non-profit - Private",
+      "Hospital Ownership_Voluntary non-profit - Other",
+      "region_South",
+      "region_Northeast",
+      "region_Midwest"
+    ]
+  }
+}
